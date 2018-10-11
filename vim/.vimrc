@@ -12,6 +12,8 @@ call plug#begin('~/.vim/pluggs')
 
 	Plug 'skywind3000/asyncrun.vim' 
 
+	Plug 'https://github.com/pangloss/vim-javascript'
+
 	" Theme 
 	Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
