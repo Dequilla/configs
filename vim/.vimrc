@@ -45,6 +45,9 @@ let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 
 " Setup
+set number
+set nu
+set numberwidth=4
 copen
 
 " Indentation
