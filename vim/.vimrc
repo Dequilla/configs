@@ -35,7 +35,6 @@ let g:lightline = {'colorscheme': 'powerline',}
 
 " Key mappings
 map <C-n> :NERDTreeToggle<CR>
-nmap <C-p> :Files
 
 " Split navigation
 nmap <silent> <C-k> :wincmd k<CR>
