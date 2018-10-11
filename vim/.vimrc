@@ -14,8 +14,12 @@ call plug#begin('~/.vim/pluggs')
 
 	Plug 'https://github.com/pangloss/vim-javascript'
 
+	Plug 'mattn/emmet-vim'
+
 	" Theme 
 	Plug 'dracula/vim', { 'as': 'dracula' }
+
+	Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " Color Scheme
@@ -23,8 +27,15 @@ syntax on
 color dracula
 set termguicolors
 
+if !has('gui_running')
+  set t_Co=256
+endif
+
+let g:lightline = {'colorscheme': 'powerline',}
+
 " Key mappings
 map <C-n> :NERDTreeToggle<CR>
+nmap <C-p> :Files
 
 " Split navigation
 nmap <silent> <C-k> :wincmd k<CR>
