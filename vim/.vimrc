@@ -25,10 +25,10 @@ set termguicolors
 map <C-n> :NERDTreeToggle<CR>
 
 " Split navigation
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
 
 " Cursor
 highlight Cursor guifg=white guibg=black
@@ -46,3 +46,12 @@ let &t_te.="\e[0 q"
 
 " Setup
 copen
+
+" Indentation
+filetype plugin indent on
+" Show existing tab with 4 spaces width
+set tabstop=4
+" When indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
