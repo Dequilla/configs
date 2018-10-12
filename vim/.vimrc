@@ -25,7 +25,10 @@ call plug#end()
 " Color Scheme
 syntax on
 color dracula
-set termguicolors
+
+if v:version >= 8
+    set termguicolors
+endif
 
 if !has('gui_running')
   set t_Co=256
