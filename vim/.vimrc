@@ -26,10 +26,6 @@ call plug#end()
 syntax on
 color dracula
 
-if v:version >= 8
-    set termguicolors
-endif
-
 if !has('gui_running')
   set t_Co=256
 endif
