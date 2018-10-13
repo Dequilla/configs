@@ -10,7 +10,12 @@ endif
 call plug#begin('~/.vim/pluggs')
 	Plug 'scrooloose/nerdtree'
 
-	Plug 'ervandew/supertab'
+    Plug 'ervandew/supertab'
+
+	Plug 'MarcWeber/vim-addon-mw-utils'
+	Plug 'tomtom/tlib_vim'
+	Plug 'garbas/vim-snipmate'
+	Plug 'honza/vim-snippets'
 
 	Plug 'skywind3000/asyncrun.vim' 
 
@@ -23,6 +28,13 @@ call plug#begin('~/.vim/pluggs')
 
 	Plug 'itchyny/lightline.vim'
 call plug#end()
+
+" Snippet
+imap <C-j> <Plug>snipMateNextOrTrigger
+smap <C-j> <Plug>snipMateNextOrTrigger
+imap <C-k> <Plug>snipMateBack
+smap <C-k> <Plug>snipMateBack
+imap <C-e> <Plug>snipMateShow
 
 " Color Scheme
 syntax on
