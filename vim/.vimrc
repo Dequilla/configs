@@ -10,6 +10,8 @@ endif
 call plug#begin('~/.vim/pluggs')
 	Plug 'scrooloose/nerdtree'
 
+	Plug 'ervandew/supertab'
+
 	Plug 'skywind3000/asyncrun.vim' 
 
 	Plug 'https://github.com/pangloss/vim-javascript'
