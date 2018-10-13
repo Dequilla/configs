@@ -39,6 +39,7 @@ imap <C-e> <Plug>snipMateShow
 " Color Scheme
 syntax on
 color dracula
+au BufReadPost *.hbs set syntax=html
 
 if !has('gui_running')
   set t_Co=256
