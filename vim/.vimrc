@@ -84,3 +84,9 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+" Allow for per-project configurations
+set exrc
+
+" Since we allow per-project configurations, make sure they are safe
+set secure
