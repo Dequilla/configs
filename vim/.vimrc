@@ -78,10 +78,13 @@ copen
 
 " Indentation
 filetype plugin indent on
+
 " Show existing tab with 4 spaces width
 set tabstop=4
+
 " When indenting with '>', use 4 spaces width
 set shiftwidth=4
+
 " On pressing tab, insert 4 spaces
 set expandtab
 
@@ -90,3 +93,9 @@ set exrc
 
 " Since we allow per-project configurations, make sure they are safe
 set secure
+
+" Set console output encoding
+set encoding=utf-8
+
+" Set file output encoding
+set fileencoding=utf-8
