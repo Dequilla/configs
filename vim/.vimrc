@@ -47,8 +47,9 @@ endif
 
 let g:lightline = {'colorscheme': 'powerline',}
 
-" Key mappings
+" NERDTree
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 " Split navigation
 nmap <silent> <C-k> :wincmd k<CR>
