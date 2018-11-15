@@ -96,6 +96,8 @@ set secure
 
 " Set console output encoding
 set encoding=utf-8
+setglobal encoding=utf-8
 
 " Set file output encoding
 set fileencoding=utf-8
+setglobal fileencoding=utf-8
